@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+  import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { ThemeProvider } from "@/contexts/theme-context";
 
@@ -6,6 +6,7 @@ import Layout from "@/routes/layout";
 import DashboardPage from "@/routes/dashboard/page";
 import ItineriesListPage from "./routes/Itinerarys/page";
 import CreateItineriesPage from "./routes/create/page";
+import ImageGallery from "./routes/image_gallery/page";
 
 function App() {
     const router = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
                     path: "itinerary_list",
                     element: <ItineriesListPage/>,
                 },
+                {
+                    path:"image_gallery",
+                    element:<ImageGallery/>
+                }
 
             ]
         },
@@ -38,3 +43,4 @@ function App() {
 }
 
 export default App;
+ 

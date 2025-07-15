@@ -1,4 +1,4 @@
-import { ChartColumn, CirclePlus, ClipboardList } from "lucide-react";
+  import { ChartColumn, CirclePlus, ClipboardList, Images } from "lucide-react";
 
 import ProfileImage from "@/assets/profile-image.jpg";
 import ProductImage from "@/assets/product-image.jpg";
@@ -22,6 +22,11 @@ export const navbarLinks = [
                 icon: ClipboardList,
                 path: "/itinerary_list",
             },
+            {
+                label:"Image Gallery",
+                icon:Images,
+                path:"image_gallery"
+            }
         ],
     },
 ];
@@ -221,3 +226,4 @@ export const topProducts = [
         rating: 4.5,
     },
 ];
+  
